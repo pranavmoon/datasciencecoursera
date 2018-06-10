@@ -14,7 +14,8 @@
 ### To get the output in current working directory:   ###
 ### 1.Set variable 'dirpath' the path to the specdata/###
 ###   folder from your current working directory.     ###
-### 2.On console execute  the command                 ###
+### 2.On console, in current working directory,       ###
+###   execute  the command 					###
 ###   < source("pollutantmean.R") >                   ###
 #########################################################
 ###--------------pollutantmean()----------------------###
@@ -161,11 +162,11 @@ print('***Information related to Q 9 and 10***')
 #	of completely observed observations (in a data-file on all variables
 #	i.e. without any missing data in complete data table) required to 
 #	compute the correlation between nitrate and sulfate; default is 0.')
-	print('---Number of complete observations>=129---')
+	print('---Number of files with complete observations>=129---')
 	print(nrow(cc[cc$n>=129,]))
-	print('---Number of complete observations>=1000---')
+	print('---Number of files with complete observations>=1000---')
 	print(nrow(cc[cc$n>=1000,]))
-	print('---Number of complete observations>=2000---')
+	print('---Number of files with complete observations>=2000---')
 	print(nrow(cc[cc$n>=2000,]))
 print('--------------------------------------')
 print('---Q9: what value printed at the end of the following code?---')
