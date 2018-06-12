@@ -11,12 +11,16 @@
 ### asked in the assignment-project of week-2 of R-   ###
 ### programming course.                               ###
 ###                                                   ###
-### To get the output in current working directory:   ###
-### 1.Set variable 'dirpath' the path to the specdata/###
-###   folder from your current working directory.     ###
-### 2.On console, in current working directory,       ###
-###   execute  the command 					###
-###   < source("pollutantmean.R") >                   ###
+### To get the output on console in current working   ###
+### directory: 							###
+### 1.On console, in current working directory        ###
+###   (in which you have saved this R file), execute  ###
+###   the command < source("pollutantmean.R") >       ###
+### 2.You  will be prompted to enter the path of the  ###
+###   SPECDATA/ folder from your current working      ###
+###   directory. enter the path without (" ").		###
+###   			 					###
+###   Pranav Kumar			                  ###
 #########################################################
 ###--------------pollutantmean()----------------------###
 pollutantmean<-function(directory,pollutant,id=1:332){
@@ -117,7 +121,8 @@ corr<-function(directory,threshold=0){
 
 ####-----------specdata path-------------------###
 
-dirpath<-"rprog_data_specdata/specdata/"
+#dirpath<-"rprog_data_specdata/specdata/"
+dirpath<-readline(prompt="Enter the path of SPECDATA folder from working directory:")
 
 ####---------------Questions-------------------###
 
